@@ -1,0 +1,64 @@
+.tasks {
+  display: flex;
+  flex-direction: column;
+
+  margin-top: 4rem;
+
+  max-width: 736px;
+  width: 100%;
+}
+
+.tasks header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+
+.tasks span {
+  background: var(--gray-400);
+  color: var(--white);
+  padding: 0.125rem 0.5rem;
+  border-radius: 999px;
+
+  font-weight: 700;
+  font-size: 0.75rem;
+}
+
+.taskCounter {
+  color: var(--blue-400);
+
+  font-weight: 700;
+  font-size: 0.75rem;
+}
+
+.taskDoneCounter {
+  color: var(--purple-400);
+  
+  font-weight: 700;
+  font-size: 0.75rem;
+}
+
+.noTasks {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  &::before {
+    content: "";
+    display: block;
+    border: 1px solid var(--gray-400);
+    width: 100%;
+    margin-bottom: 4rem;
+  }
+}
+
+.noTasks img {
+  width: 3.5rem;
+  margin-bottom: 1rem;
+}
+
+.noTasks p {
+  color: var(--gray-300);
+}
